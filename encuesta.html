@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="encuesta.css">
+    <title>Form FreeCodeCamp</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="title">
+            MediaThech
+        </h1>
+        <div class="subtitle">
+            <p id="description" class="p-class">
+                Encuesta de satisfacción.
+            </p>
+        </div>
+    </div>
+
+    <form id="survey-form">
+        <div class="linea linea1">
+            <div class="inputs">
+                <label id="name-label" for="name">Nombre:</label>
+                <input class="input-text" name="name" id="name" type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="inputs">
+                <label id="email-label" for="email">Email:</label>
+                <input class="input-text" name="email" id="email" type="email" placeholder="Ingrese su email" required>
+            </div>
+        </div>
+
+        <div class="linea">
+            <div class="inputs">
+                <label id="number-label" for="number">Edad:</label>
+                <input class="input-text" name="number" id="number" type="number" min="18" max="99"
+                    placeholder="Ingrese su edad" required>
+            </div>
+            <div class="inputs">
+                <label for="select">Opciones:</label>
+                <select id="dropdown" name="select">
+                    <option class="option0" hidden>Elija una opción</option>
+                    <option>Opcion 1</option>
+                    <option>Opcion 2</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="linea linea2">
+            <div class="check">
+                <p>¿Que tan satisfecho estas con el servicio?</p>
+                <div class="radios">
+                    <div class="radios-option">
+                        <input id="valor1" type="radio" name="radio" value="1">
+                        <label for="valor1">Satisfecho</label>
+                    </div>
+                    <div class="radios-option">
+                        <input id="valor2" type="radio" name="radio" value="1">
+                        <label for="valor2">Neutro</label>
+                    </div>
+                    <div class="radios-option">
+                        <input id="valor3" type="radio" name="radio" value="1">
+                        <label for="valor3">Insatisfecho</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="check">
+                <p for="check">Otras consultas sobre nuestro servicio</p>
+                <div class="checkbox">
+                    <label>Recomendaria este sitio</label><input type="checkbox" name="check" value="1">
+                </div>
+                <div class="checkbox">
+                    <label>Me gustaria mas información</label><input type="checkbox" name="check" value="2">
+                </div>
+                <div class="checkbox">
+                    <label>Me gustaria otro diseño</label><input type="checkbox" name="check" value="3">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <textarea class="textArea" placeholder="Ingrese su texto"></textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
